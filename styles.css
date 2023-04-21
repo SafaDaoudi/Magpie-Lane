@@ -1,14 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+
+/**/
+.llanding{
+    width: 100%;
+    min-height: 1400px;
+    background-color: aqua;
+    display: block;
+}
+.mlanding{
+    width:100%;
+    min-height: 1400px;
+    background-color: red;
+    display: none;
+}
+.tekstcenter{
+    margin-top: -900px;
+    margin-bottom: 930px;
+}
+
 /*beskrivelse af fx Sita billede til laptop*/
-.billedetop{
+.lbilledetop{
     width: 70%;
     min-height: 620px;/*skal hedde height: auto*/
     background-color: aqua;
     margin: auto;
+    display: block;
+}
+.mbilledetop{
+    margin: auto;
+    width: 100%;
+    min-height: 800px;
+    background-color: red;
+    display: none;
 }
 .tekstbillede{
     position: relative;
-    margin-top: -40px;
+    margin-top: -20px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /*til billed/tekst deling på sita side*/
@@ -26,20 +61,128 @@
     height: 500px; /*skal hedde height: auto*/
     background-color: aqua;
 }
+/*til tekst/billede/billede på sita fx*/
+.flexb2t1{
+    width: 70%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    gap: inherit;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.bredtekst{
+    width: 65%;
+    min-height: 600px;
+    background-color: yellow;
+}
+.tobtekst{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    width: 30%;
+    min-height: 600px;
+    background-color: aquamarine;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.plads2{
+    width: 100%;
+    min-height: 280px;
+    background-color: aqua;
+}
 
-@media screen and (min-width: 800px){
-    .flexb1t1{
-        flex-direction: row;
-    }
+/*events*/
+.flexevent{
+    display: flex;
+    width: 60%;
+    height: 500px;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    gap:10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.streg{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width:70%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*rekatngel billde - tokvadrat billede, OBS tjek om det virker med billedernes størrelse!!*/
+.flexb2t1{
+    width: 70%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    gap:5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.lrektangel{
+    width: 60%;
+    min-height: 600px;
+    background-color: yellow;
+    display: block;
+}
+.mkvadrat{
+    width:100%;
+    min-height: 600px;
+    background-color: red;
+    display: none;
+}
+.kvadratsæt{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    justify-content: space-between;
+    gap:inherit ;
+    min-height: 600px;
+    background-color: aquamarine;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.plads3{
+    width: 100%;
+    min-height: 280px;
+    background-color: aqua;
 }
 
 
+
 @media screen and (max-width: 800px){
-    .billedetop{
-        width:100%;
-        height: 800px;
+    .llanding{
+        display: none;
+    }
+    .mlanding{
+        display: block;
+    }
+    
+
+
+    .lbilledetop{
+        display: none;  
+    }
+    .mbilledetop{
+        margin: auto;
+        width: 100%;
+        height: 800%;
+        background-color: red;
+        display: block;
     }
   
+
+
     .flexb1t1{
         flex-direction: column;
         width: 100%;
@@ -49,5 +192,45 @@
         width:100%;
         height: 500px;
     }
- 
+
+
+
+    .flexb2t1{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+    }
+    .bredtekst{
+        width:100%;
+    }
+    .tobtekst{
+        width: 100%;
+    }
+    .plads2{
+        width: 100%;
+    }
+
+
+
+    .flexevent{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+
+
+
+    .lrektangel{
+        display: none;
+    }
+    .mkvadrat{
+        display: block;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .kvadratsæt{
+        width: 100%;
+    }
 }
