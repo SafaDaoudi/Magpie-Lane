@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+/*header--------------------------------*/
 header{
     display: flex;
     align-items: center;
@@ -11,7 +12,12 @@ header{
     height: 130px;
     z-index: 999;
     font-family: 'Lato', sans-serif;
-    background-color: rgb(252, 252, 252);
+    transition: 3s;
+}
+
+header:hover{
+    background-color: white;
+    transition: 3s;
 }
 
 #logo{
@@ -20,12 +26,16 @@ header{
 }
 #søgikon{
     padding-left: 15%;
+    float:right;
+    margin-right: 5px;
 }
 
 header nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: inherit;
     align-items: center;
+
 }
 
 header nav a{
@@ -34,29 +44,64 @@ header nav a{
     text-decoration:none;
     color: black;
 }
+header nav a:hover{
+    text-decoration: underline;
+
+}
+
+/*dropdown------------------------------------------*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content{
+    display:none;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    min-width: 240px;
+    background-color: white;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+}
+.dropdown-content a:hover{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+.dropdown:hover .dropdown-content{
+    display: block;   
+}
+/*generelle regler----------------------------------*/
 h1{
     text-align: center;
 }
 
-/**/
-.llanding{
+/*styling landing----------------------------------*/
+#llanding{
     width: 100%;
-    min-height: 1400px;
-    background-color: aqua;
+    height: auto;    
     display: block;
 }
-.mlanding{
+#mlanding{
     width:100%;
-    min-height: 1400px;
-    background-color: red;
+    height: auto;
     display: none;
 }
-.tekstcenter{
-    margin-top: -900px;
-    margin-bottom: 930px;
+#ltekstcenter{
+    margin-top: -500px;
+    margin-bottom: 530px;
+    display: block;
+}
+#mtekstcenter{
+    margin-top: -800px;
+    margin-bottom: 830px;
+    display: none;
 }
 
-/*beskrivelse af fx Sita billede til laptop*/
+/*beskrivelse af fx Sita billede til laptop--------------------*/
 .lbilledetop{
     width: 70%;
     min-height: 620px;/*skal hedde height: auto*/
@@ -78,7 +123,7 @@ h1{
     margin-bottom: 30px;
 }
 
-/*til billed/tekst deling på sita side*/
+/*til billed/tekst deling på sita side-------------------*/
 .flexb1t1{
     display: flex;
     width:70%;
@@ -93,7 +138,7 @@ h1{
     height: 500px; /*skal hedde height: auto*/
     background-color: aqua;
 }
-/*til tekst/billede/billede på sita fx*/
+/*til tekst/billede/billede på sita fx----------------------*/
 .flexb2t1{
     width: 70%;
     min-height: 600px;
@@ -127,7 +172,7 @@ h1{
     background-color: aqua;
 }
 
-/*events*/
+/*events------------------------------------------*/
 .flexevent{
     display: flex;
     width: 60%;
@@ -193,13 +238,22 @@ h1{
 
 
 @media screen and (max-width: 800px){
-    .llanding{
+    #llanding{
         display: none;
     }
-    .mlanding{
+    #mlanding{
         display: block;
     }
-    
+    #ltekstcenter{
+        margin-top: -500px;
+        margin-bottom: 530px;
+        display: none;
+    }
+    #mtekstcenter{
+        margin-top: -800px;
+        margin-bottom: 830px;
+        display: block;
+    }
 
 
     .lbilledetop{
@@ -247,7 +301,7 @@ h1{
     .flexevent{
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 100%;
         margin: auto;
     }
 
