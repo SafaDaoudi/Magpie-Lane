@@ -1,0 +1,98 @@
+
+
+/*Gælder for alt. Får billeder og bokse til at gå helt ud til kanten*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------HEADER--------------------------------------------------------*/
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 130px;
+    z-index: 999;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(252, 252, 252);
+}
+
+#logo{
+    width: 20%;
+    padding-left: 2%;
+}
+#søgikon{
+    padding-left: 15%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a{
+    padding-left: 45px;
+    padding-right: 45px;
+    text-decoration:none;
+    color: black;
+}
+
+
+/*-----------------------------------------------------------------MAIN--------------------------------------------------------*/
+/*beskrivelse af fx Sita billede til laptop*/
+.billedetop{
+    width: 70%;
+    min-height: 620px;/*skal hedde height: auto*/
+    background-color: aqua;
+    margin: auto;
+}
+.tekstbillede{
+    position: relative;
+    margin-top: -20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*til billed/tekst deling på sita side*/
+.flexb1t1{
+    display: flex;
+    width:70%;
+    height: 500px;/*skal hedde height: auto*/
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    gap: 10%;
+}
+.pladsholder{
+    width: 45%;
+    height: 500px; /*skal hedde height: auto*/
+    background-color: aqua;
+}
+
+@media screen and (min-width: 800px){
+    .flexb1t1{
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .billedetop{
+        width:100%;
+        height: 800px;
+    }
+  
+    .flexb1t1{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .pladsholder{
+        width:100%;
+        height: 500px;
+    }
+ 
+}
