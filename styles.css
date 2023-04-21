@@ -1,0 +1,53 @@
+/*beskrivelse af fx Sita billede til laptop*/
+.billedetop{
+    width: 70%;
+    min-height: 620px;/*skal hedde height: auto*/
+    background-color: aqua;
+    margin: auto;
+}
+.tekstbillede{
+    position: relative;
+    margin-top: -40px;
+    text-align: center;
+}
+
+/*til billed/tekst deling på sita side*/
+.flexb1t1{
+    display: flex;
+    width:70%;
+    height: 500px;/*skal hedde height: auto*/
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    gap: 10%;
+}
+.pladsholder{
+    width: 45%;
+    height: 500px; /*skal hedde height: auto*/
+    background-color: aqua;
+}
+
+@media screen and (min-width: 800px){
+    .flexb1t1{
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .billedetop{
+        width:100%;
+        height: 800px;
+    }
+  
+    .flexb1t1{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .pladsholder{
+        width:100%;
+        height: 500px;
+    }
+ 
+}
