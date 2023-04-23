@@ -1,8 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 /*header--------------------------------*/
+#burgermenu{
+    display: none; /*dækker over den ekstra menu - burgermenuen - der ikke skal vises på laptop*/
+}
 header{
     display: flex;
     align-items: center;
@@ -12,12 +16,13 @@ header{
     height: 130px;
     z-index: 999;
     font-family: 'Lato', sans-serif;
-    transition: 3s;
+    transition: 2s;
+    display: block;
 }
 
 header:hover{
     background-color: white;
-    transition: 3s;
+    transition: 2s;
 }
 
 #logo{
@@ -35,7 +40,6 @@ header nav{
     justify-content: space-between;
     gap: inherit;
     align-items: center;
-
 }
 
 header nav a{
@@ -74,15 +78,100 @@ header nav a:hover{
 .dropdown:hover .dropdown-content{
     display: block;   
 }
+
+/*burgerikon---------------------------------*/
+.burgerikon .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+.burgerikon .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+.burgerikon .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+.burgerikon .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+.burgerikon .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+.burgerikon .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+.burgerikon{
+    display: none;
+    
+}
+.burgerikon input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+.burgerikon input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+.burgerikon input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+.burgerikon input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+.burgerikon input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
 /*generelle regler----------------------------------*/
 h1{
     text-align: center;
 }
 
 /*styling landing----------------------------------*/
+
+#mforside{
+    background-image: url(./fotos/Mforside.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 66.64%;
+    display: none;
+}
+#midttekst{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
 #llanding{
     width: 100%;
-    height: auto;    
+    height: auto;  
     display: block;
 }
 #mlanding{
@@ -135,8 +224,9 @@ h1{
 }
 .pladsholder{
     width: 45%;
-    height: 500px; /*skal hedde height: auto*/
-    background-color: aqua;
+    height: auto;
+    /*nogen bud på, hvordan vi får teksten op i toppen og ikke centreret?*/
+
 }
 /*til tekst/billede/billede på sita fx----------------------*/
 .flexb2t1{
@@ -238,6 +328,179 @@ h1{
 
 
 @media screen and (max-width: 800px){
+ 
+    header nav{
+        display: none; /*dækker over laptopmenuen, så den ikke vises på mobil*/
+    }
+    /* burgermenu----------------------------*/
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    header{
+        background-color: none;
+    }
+    #søgikon{
+    display: none;
+    }
+    #burgermenu{
+        display: block; /*burgermenu vises*/
+    }
+    .menu-items {
+        margin-top:-25px; /*for at få menu-items kassen til at gå helt op til toppen af skærmen - ellers vistes lidt af billedet i toppen*/
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+      }
+      
+      .navbar {
+        width: 100%;
+        
+      }
+      
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+      }
+      
+      .navbar .menu-items {
+        display: flex;
+      }
+      
+      .navbar .nav-container li { /*for at alle punkter ikke får en prik foran sig (fordi <li>)*/
+        list-style: none;
+      }
+      
+      .navbar .nav-container a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 0.7rem;
+      }
+      
+      .nav-container {
+        display: block;
+        position: relative;
+        height: 60px;
+      }
+      
+      .nav-container .checkbox { /*styling af den usynlige chechbox, der ligger under burgerikonet, så det virker når man klikker på det - ellers er det bare et billede*/
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        right: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .nav-container .hamburger-lines { /*ja - burgerlinjernes styling så de ses som burger*/
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .nav-container .hamburger-lines .line { /*styling af den enkelte linje i burgeren*/
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: black
+      }
+      
+      .nav-container .hamburger-lines .line1 { 
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line2 { 
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .navbar .menu-items { /*styling til hvordan linksene er placeret og transformeres*/
+        padding-top: 120px;
+        background-color: white;
+        height: 100vh;
+        width: 100%;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+      }
+    
+      
+      .navbar .menu-items li { /*tekststørrelse, -type og den slags*/
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 30%;
+      }
+      .navbar .menu-items .ddc { /*det samme, men til de punkter, der var dropdown content (derfor ddc) i laptopnaven*/
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        
+      }
+      .logo {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        font-size: 1.2rem;
+        color: #0e2431;
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .menu-items { /* hvad der sker når den usynlige checkbox er checket af*/
+        transform: translateX(0);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 { /*øverste burgerlinje drejer højre ende ned*/
+        transform: rotate(45deg);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 { /*midterste linje forsvinder*/
+        transform: scaleY(0);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {/*nederste burgerlinje drejer højre ende op*/
+        transform: rotate(45deg);
+        transform: rotate(-45deg);
+      }
+    
+      .nav-container input[type="checkbox"]:checked ~ .logo{/*logoet ligger lige nu under kassen med menu-items og skjules - så display=none er ligegyldigt, vi skal have den ind i menu-items kassen, hvis den skal vises, men det tænker jeg vi gør, hvis vi har tid*/
+        display: block;
+      }
+
+        /*---------------------------------*/
+
+    #lforside{
+        display: none;
+    }
+    #mforside{
+        display: block;
+    }
     #llanding{
         display: none;
     }
