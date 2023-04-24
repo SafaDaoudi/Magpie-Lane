@@ -246,23 +246,17 @@ h1{
     width: 45%;
     height: 250px;
 }
-
 .pladsholdert h3{
     font-family: 'Lato', sans-serif;
     font-size: 15pt;   
 }
-
 .pladsholdert p{
     font-family: 'Lato', sans-serif;
     font-size: 15pt;
 }
-
-
-
 .eventsoverskrift{
     margin-top: 20%;
 }
-
 .eventsoverskrift h1{
     color: black;
     font-weight: normal;
