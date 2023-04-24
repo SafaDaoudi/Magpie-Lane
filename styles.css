@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*---------------------------------TEKST--------------------------------*/
 h1{
     margin: auto;
     font-size: 100pt;
@@ -17,9 +18,15 @@ p{
     font-size: 20pt;
     margin-left: 15%;
     margin-right: 15%;
+<<<<<<< HEAD
     font-family: 'Lato', sans-serif;
     font-weight: bolder;
+=======
+>>>>>>> f4cb1eac781dbb86c8e1fb0170f383829a2253b8
 }
+
+
+/*---------------------------------BODY--------------------------------*/
 body a{
     text-decoration: none;
     color: black;
@@ -28,7 +35,7 @@ body a{
 body a:hover{
     text-decoration: underline;
 }
-/*header--------------------------------*/
+/*---------------------------------------HEADER--------------------------------*/
 #burgermenu{
     display: none; /*dækker over den ekstra menu - burgermenuen - der ikke skal vises på laptop*/
 }
@@ -249,10 +256,30 @@ h1{
     width: 45%;
     height: 250px;
 }
+<<<<<<< HEAD
 .pladsholdersitat{
     width: 45%;
     height: auto;
 }
+=======
+.pladsholdert h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 15pt;   
+}
+.pladsholdert p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15pt;
+}
+.eventsoverskrift{
+    margin-top: 20%;
+}
+.eventsoverskrift h1{
+    color: black;
+    font-weight: normal;
+}
+
+
+>>>>>>> f4cb1eac781dbb86c8e1fb0170f383829a2253b8
 /*til tekst/billede/billede på sita fx----------------------*/
 .flexb2t1{
     width: 70%;
@@ -344,6 +371,9 @@ h1{
     height: auto;
     margin-bottom:3%;
 }
+
+
+
 
 
 
@@ -564,7 +594,15 @@ h1{
         margin: auto;
     }
 
+<<<<<<< HEAD
    
+=======
+    .eventsoverskrift h1{
+     color: rgb(0, 0, 0);
+     font-size: 50pt;
+     margin-top: 20%;   
+    }
+>>>>>>> f4cb1eac781dbb86c8e1fb0170f383829a2253b8
     .pladsholder{
         width:80%;
         height: auto
