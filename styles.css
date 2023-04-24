@@ -638,69 +638,77 @@ h1{
     }
 }
 
+
+
+
 /*HER STARTER FOOTER'EN*/
 footer{
-    background-color: grey;
-    margin-top: 20%;
+    background-color: rgb(255, 255, 255);
+    border-top: solid black 1px;
+    margin-top: 40%;
     display: flex;
-    font-family: 'Playfair Display', serif;
-    
-
+    height: 10%;
 }
-
 footer h4{
-    font-size: 18pt;
+    font-family: 'Playfair Display', serif; 
+    font-size: 12pt;
+    font-weight: bold;
+    margin-left: 5%;
+  
 }
+footer h5{
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: rgb(84, 84, 90);
+}
+
+
+
 .åbningstider{
-    background-color: #ff5951;
     margin-top: 5%;
     margin-left: 7%;
     padding-right: 10%;
     
     line-height:250%;
     text-align: left;
+}
 
+.åbningstider h4{
+    padding-bottom: 70%;
 }
-.åbningstider p{
-    font-size: 10pt;
-    font-family: 'Lato',sans-serif;
-    background-color: green;
-    
-}
-.åbningstider span{
-    color: transparent;
-}
+
+
 
 .some{
-    background-color: aqua;
     margin-top: 5%;
     margin-left: 15%;
 }
+
+
 .some a{
-    padding-top: 20%;
     padding-left: 10%; /*Giver ikonerne plads mellem hinanden*/
     text-decoration: none;
 }
-
-
 .some img{ /*ikonernes størrelse*/
+    margin-top: 30%;
     width:12%;
     height: 10%;
 }
 .some img:hover{ /*Hvor stort ikonerne skal "springe" ud*/
-    transition: transform .09s;
+    transition: transform .1s;
     width: 15%;
     height: 12.5%;
 }
 
 
 .hyperlink{
-    background-color: bisque;
     margin-left: 20%;
     margin-right: 5%;
-    padding-left: 3%;
     margin-top: 5%;
-    text-align: right;
+}
+.hyperlink h4{
+    padding-bottom: 25%;
 }
 
 .hyperlink iframe{
