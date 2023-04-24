@@ -539,9 +539,19 @@ h1{
         width: 100%;
         margin: auto;
     }
+
+    .eventsoverskrift{
+        
+    }
     .pladsholder{
         width:80%;
         height: auto
+    }
+
+    .pladsholdert{
+        margin-top: 10%;
+        margin-bottom: -40%;
+        text-align: center;
     }
 
 
