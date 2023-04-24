@@ -1,89 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Velkommen til Magpie Lane</title>
+        <!--GOOGLE FONTS--> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 </head>
-<header>
-    <!--Logo-->
-    <a id="logo" href="index.html"><img src="fotos/magpielanelogo.png" alt="Magpie Lane logo"></a>
+<body>
+    <!----------------------------------------------------------------------------------------HEADER-------------------------------------------------------------------------->
+    <header>
+        <!--Logo-->
+        <a id="logo" href="index.html"><img src="fotos/magpielanelogo.png" alt="Magpie Lane logo"></a>
 
-    <!--Knapperne i headeren-->  
-    <nav>
-                <div class="dropdown">
-                    <a href="#">OM</a>
-                        <div class="dropdown-content">
-                            <span>
-                                <a href="ommagpie.html">om Magpie Lane</a></br>
-                            </span>
-                            <span>
-                                <a href="omsita.html">om Sita</a></br>
-                            </span>
-                        </div>
-                </div>
+        <!--Knapperne i headeren-->  
+        <nav>
+                    <div class="dropdown">
+                        <a href="#">OM</a>
+                            <div class="dropdown-content">
+                                <span>
+                                    <a href="ommagpie.html">om Magpie Lane</a></br>
+                                </span>
+                                <span>
+                                    <a href="omsita.html">om Sita</a></br>
+                                </span>
+                            </div>
+                    </div>
 
-                <div class="dropdown">
-                    <a href="#">VINTAGETØJ</a>
-                        <div class="dropdown-content">
-                            <span>
-                                <a href="tøjetsrejse.html">Tøjets Rejse</a></br>
-                            </span>
-                            <span>
-                                <a href="ugensudvalgte.html">Ugens Udvalgte</a></br>
-                            </span>
-                        </div>
-                    
-                </div>
+                    <div class="dropdown">
+                        <a href="#">VINTAGETØJ</a>
+                            <div class="dropdown-content">
+                                <span>
+                                    <a href="tøjetsrejse.html">Tøjets Rejse</a></br>
+                                </span>
+                                <span>
+                                    <a href="ugensudvalgte.html">Ugens Udvalgte</a></br>
+                                </span>
+                            </div>
+                        
+                    </div>
 
-                <div class="dropdown">
-                    <a href="#">DESIGNERE</a>
-                        <div class="dropdown-content">
-                            <span>
-                                <a href="kimonokomono.html">KimonoKomono</a></br>
-                            </span>
-                            <span>
-                                <a href="oraije.html">Oraije Paris</a></br>
-                            </span>
-                            <span>
-                                <a href="oomh.html">OutOfMyHand</a></br>
-                            </span>
-                        </div>
-                    
+                    <div class="dropdown">
+                        <a href="#">DESIGNERE</a>
+                            <div class="dropdown-content">
+                                <span>
+                                    <a href="kimonokomono.html">KimonoKomono</a></br>
+                                </span>
+                                <span>
+                                    <a href="oraije.html">Oraije Paris</a></br>
+                                </span>
+                                <span>
+                                    <a href="oomh.html">OutOfMyHand</a></br>
+                                </span>
+                            </div>
+                        
+                    </div>
+                    <a href="events.html">EVENTS</a>
                 </div>
-                <a href="events.html">EVENTS</a>
+            </div>
+        </nav>
+
+        <!--Søg knap-->
+        
+        <nav id="burgermenu">
+            <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+                
+                <div class="menu-items">
+                <li><a href="#">OM</a></li>
+                <li><a class="ddc" href="ommagpie.html">Om Butikken</a></li>
+                <li><a class="ddc" href="omsita.html">Om Sita</a></li></br></br>
+                <li><a href="#">VINTAGETØJ</a></li>
+                <li><a class="ddc" href="tøjetsrejse.html">Tøjets Rejse</a></li>
+                <li><a class="ddc" href="ugensudvalgte.html">Ugens Udvalgte</a></li></br></br>
+                <li><a href="#">DESIGNERE</a></li>
+                <li><a class="ddc" href="kimonokomono.html">KimonoKomono</a></li>
+                <li><a class="ddc" href="oraije.html">Oraije Paris</a></li>
+                <li><a class="ddc" href="oomh.html">OutOfMyHand</a></li></br></br>
+                <li><a href="events.html">EVENTS</a></li>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+<!--------------------------------------------------------------------------------------------MAIN----------------------------------------------------------------------->
+
+    <main>
+        <img class="mbilledetop" src="fotos/Mforsideoomh.jpg">
+        <img class="lbilledetop" src="fotos/LOOMHforside.jpg"> 
+        <div class="tekstbillede"><h1>OUT OF MY HAND</h1></div> 
+        <p>
+            <br>
+            I 2016 startede Sarah Boddum sit eget brand, OUTOFMYHAND. Navnet OUTOFMYHAND er inspireret af en Nick Cave sang og indikerer, at tøjet er håndlavet, hvilket er en af ​​Sarahs store lidenskaber. 
+            Hun elsker at arbejde med genbrugsmaterialer, og hendes designproces er baseret på de materialer, hun har til rådighed, og hendes kreativitet blomstrer, når hun skaber nye designs.<br> <br>
+
+            Sarah Boddum har altid elsket at skabe ting med sine hænder, og siden hun var en lille pige, har hun tegnet og lavet kunst. Da hun begyndte at overveje, hvad hun ville studere, vidste hun, at
+             hun ikke ønskede at blive kunstner, så hun valgte at læse fashion design på TEKO for at udforske sit kreative potentiale på en mere praktisk måde. <br><br>
+
+            Sarah er ikke en designer, der følger trends, og hun skaber sjældent skitser først. Hendes designs vokser frem organisk, og hver stil er unik og bærer sin egen historie. OUTOFMYHAND er mere 
+            end blot en stil - det er et statement om bæredygtighed og at være ansvarlig for vores planet.<br> <br>
+
+            Hvis du leder efter noget særligt, kan du altid kontakte Sarah på Instagram for at lave specialbestillinger i andre størrelser og materialer. <br>
+
+        </p>
+
+        <!--vest-->
+        <div class="flexb2t1 column">
+            <img class="lrektangel" src="fotos/Lvestoomh.jpg">
+            <img class="mkvadrat" src="fotos/Kvestoomh.jpg">
+            <div class="kvadratsæt">
+                <img class="plads3" src="fotos/Kvest1oomh.jpg">
+                <img class="plads3" src="fotos/Kvest2oomh.jpg">
             </div>
         </div>
-    </nav>
 
-    <!--Søg knap-->
-    
-    <nav id="burgermenu">
-        <div class="navbar">
-          <div class="container nav-container">
-              <input class="checkbox" type="checkbox" name="" id="" />
-              <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </div>  
-            
-            <div class="menu-items">
-              <li><a href="#">OM</a></li>
-              <li><a class="ddc" href="ommagpie.html">Om Butikken</a></li>
-              <li><a class="ddc" href="omsita.html">Om Sita</a></li></br></br>
-              <li><a href="#">VINTAGETØJ</a></li>
-              <li><a class="ddc" href="tøjetsrejse.html">Tøjets Rejse</a></li>
-              <li><a class="ddc" href="ugensudvalgte.html">Ugens Udvalgte</a></li></br></br>
-              <li><a href="#">DESIGNERE</a></li>
-              <li><a class="ddc" href="kimonokomono.html">KimonoKomono</a></li>
-              <li><a class="ddc" href="oraije.html">Oraije Paris</a></li>
-              <li><a class="ddc" href="oomh.html">OutOfMyHand</a></li></br></br>
-              <li><a href="events.html">EVENTS</a></li>
-            </div>
-          </div>
+        <div class="pris">
+            <p>
+                Pris:
+                <br> <br>
+                Farve:
+                <br> <br>
+                Størrelse:
+            </p>
         </div>
-      </nav>
-</header>
+
+        <!--pink/lilla jakke-->
+        <div class="flexb2t1 column">
+            <div class="kvadratsæt">
+                <img class="plads3" src="fotos/Kpinkjakke1oomh.jpg">
+                <img class="plads3" src="fotos/Kpinkjakke2oomh.jpg">
+            </div>
+            <img class="lrektangel" src="fotos/Lpinkjakkeoomh.jpg">
+            <img class="mkvadrat" src="fotos/Kpinkjakkeoomh.jpg">
+        </div>
+        
+        <div class="pris">
+            <p>
+                Pris:
+                <br> <br>
+                Farve:
+                <br> <br>
+                Størrelse:
+            </p>
+        </div>
+
+        <!--Gul kjole-->
+        <div class="flexb2t1 column">
+            <img class="lrektangel" src="fotos/Lgulkjoleoomh.jpg">
+            <img class="mkvadrat" src="fotos/Kgulkjoleoomh.jpg">
+            <div class="kvadratsæt">
+                <img class="plads3" src="fotos/Kgulkjole1oomh.jpg">
+                <img class="plads3" src="fotos/Kgulkjole2oomh.jpg">
+            </div>
+        </div>
+        <div class="pris">
+            <p>
+                Pris:
+                <br> <br>
+                Farve:
+                <br> <br>
+                Størrelse:
+            </p>
+        </div>
+
+                <!--pink kjole-->
+                <div class="flexb2t1 column">
+                    <div class="kvadratsæt">
+                        <img class="plads3" src="fotos/Kpinkkjole1oomh.jpg">
+                        <img class="plads3" src="fotos/Kpinkkjole2oomh.jpg">
+                    </div>
+                    <img class="lrektangel" src="fotos/Lpinkkjoleoomh.jpg">
+                    <img class="mkvadrat" src="fotos/Kpinkkjoleoomh.jpg">
+                </div>
+                
+                <div class="pris">
+                    <p>
+                        Pris:
+                        <br> <br>
+                        Farve:
+                        <br> <br>
+                        Størrelse:
+                    </p>
+                </div>
+    </main>
+</body>
+</html>
