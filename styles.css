@@ -18,6 +18,7 @@ p{
     margin-left: 15%;
     margin-right: 15%;
     font-family: 'Lato', sans-serif;
+    font-weight: bolder;
 }
 body a{
     text-decoration: none;
@@ -237,6 +238,7 @@ h1{
     margin: auto;
     justify-content: space-between;
     gap: 10%;
+    margin-bottom: 20px;
 }
 .pladsholder{
     width: 45%;
@@ -247,23 +249,24 @@ h1{
     width: 45%;
     height: 250px;
 }
-
+.pladsholdersitat{
+    width: 45%;
+    height: auto;
+}
 /*til tekst/billede/billede på sita fx----------------------*/
 .flexb2t1{
     width: 70%;
-    min-height: 600px;
+    height: auto;
     display: flex;
     align-items: center;
     margin: auto;
     justify-content: space-between;
     gap: inherit;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10%;
 }
 .bredtekst{
     width: 65%;
-    min-height: 600px;
-    background-color: yellow;
+    height: 100%;
 }
 .tobtekst{
     display: flex;
@@ -272,13 +275,12 @@ h1{
     gap: 40px;
     width: 30%;
     min-height: 600px;
-    background-color: aquamarine;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+
 }
 .plads2{
     width: 100%;
-    min-height: 280px;
+    height: auto;
     background-color: aqua;
 }
 
@@ -346,6 +348,9 @@ h1{
 
 
 @media screen and (max-width: 800px){
+    p{
+        font-size: 17pt;
+    }
     #logo{
         display: none;
     }
@@ -533,7 +538,12 @@ h1{
         margin-bottom: 830px;
         display: block;
     }
-
+    .pladsholdersitat{
+        width: 100%;
+        text-align: left;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 
     .lbilledetop{
         display: none;  
@@ -554,9 +564,7 @@ h1{
         margin: auto;
     }
 
-    .eventsoverskrift{
-        
-    }
+   
     .pladsholder{
         width:80%;
         height: auto
@@ -567,19 +575,26 @@ h1{
         margin-bottom: -40%;
         text-align: center;
     }
-
-
+    .plads2{
+        margin-bottom: 10%;
+    }
+    .revers{
+        flex-direction: column-reverse;
+        margin-top: 50%;
+    }
 
     .flexb2t1{
         flex-direction: column-reverse;
+        margin-top:20px;
         width: 100%;
         margin: auto;
+        margin-top: 300px;
     }
     .bredtekst{
         width:100%;
     }
     .tobtekst{
-        width: 100%;
+        width: 80%;
     }
     .plads2{
         width: 100%;
