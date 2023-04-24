@@ -326,7 +326,7 @@ h1{
 .plads3{
     width: 100%;
     height: auto;
-    margin-bottom: 2%;
+    margin-bottom:3%;
 }
 
 
@@ -577,11 +577,16 @@ h1{
     }
     .mkvadrat{
         display: block;
+        width: 80%;
     }
     .column{
         flex-direction: column;
     }
-    .pl
+    .plads3{
+        width:80%;
+        margin: auto;
+        margin-bottom: 3%;
+    }
     .kvadratsæt{
         width: 100%;
     }
