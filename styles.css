@@ -3,6 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+h1{
+    margin: auto;
+}
+body a{
+    text-decoration: none;
+    color: black;
+
+}
+body a:hover{
+    text-decoration: underline;
+}
 /*header--------------------------------*/
 #burgermenu{
     display: none; /*dækker over den ekstra menu - burgermenuen - der ikke skal vises på laptop*/
@@ -29,16 +40,10 @@ header:hover{
     width: 20%;
     padding-left: 2%;
 }
-#søgikon{
-    padding-left: 15%;
-    float:right;
-    margin-right: 5px;
-}
 
 header nav{
     display: flex;
-    justify-content: space-between;
-    gap: inherit;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -192,17 +197,15 @@ h1{
 
 /*beskrivelse af fx Sita billede til laptop--------------------*/
 .lbilledetop{
+    margin-top: 140px;
     width: 70%;
-    min-height: 620px;/*skal hedde height: auto*/
-    background-color: aqua;
-    margin: auto;
-    display: block;
+    height: auto;
+    margin-left: 15%;
 }
 .mbilledetop{
     margin: auto;
     width: 100%;
-    min-height: 800px;
-    background-color: red;
+    height: auto;
     display: none;
 }
 .tekstbillede{
@@ -226,7 +229,10 @@ h1{
     width: 45%;
     height: auto;
     /*nogen bud på, hvordan vi får teksten op i toppen og ikke centreret?*/
-
+}
+.pladsholdert{
+    width: 45%;
+    height: 250px;
 }
 /*til tekst/billede/billede på sita fx----------------------*/
 .flexb2t1{
@@ -266,9 +272,9 @@ h1{
 .flexevent{
     display: flex;
     width: 60%;
-    height: 500px;
+    height: auto;
     align-items: center;
-    margin: auto;
+    margin-left: 20%;
     justify-content: space-between;
     gap:10%;
     margin-top: 15px;
@@ -280,7 +286,7 @@ h1{
     border-width: 1px;
     width:70%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 30px;
 }
 
@@ -298,37 +304,37 @@ h1{
 }
 .lrektangel{
     width: 60%;
-    min-height: 600px;
-    background-color: yellow;
+    height: auto;
     display: block;
 }
 .mkvadrat{
     width:100%;
-    min-height: 600px;
-    background-color: red;
+    height: auto;
     display: none;
 }
 .kvadratsæt{
     display: flex;
     flex-direction: column;
     width: 37%;
+    height: 49%;
     justify-content: space-between;
-    gap:inherit ;
-    min-height: 600px;
-    background-color: aquamarine;
+    gap:2%;
+    height: auto;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 .plads3{
     width: 100%;
-    min-height: 280px;
-    background-color: aqua;
+    height: auto;
+    margin-bottom:3%;
 }
 
 
 
 @media screen and (max-width: 800px){
- 
+    #logo{
+        display: none;
+    }
     header nav{
         display: none; /*dækker over laptopmenuen, så den ikke vises på mobil*/
     }
@@ -338,13 +344,9 @@ h1{
     padding: 0;
     box-sizing: border-box;
     }
-    header{
-        background-color: none;
-    }
-    #søgikon{
-    display: none;
-    }
+
     #burgermenu{
+        margin-top: -25px;
         display: block; /*burgermenu vises*/
     }
     .menu-items {
@@ -357,7 +359,6 @@ h1{
       
       .navbar {
         width: 100%;
-        
       }
       
       .nav-container {
@@ -365,6 +366,7 @@ h1{
         justify-content: space-between;
         align-items: center;
         height: 62px;
+        /*margin-top: 20px;*/
       }
       
       .navbar .menu-items {
@@ -394,7 +396,7 @@ h1{
         display: block;
         height: 32px;
         width: 32px;
-        top: 20px;
+        top: 40px;
         right: 20px;
         z-index: 5;
         opacity: 0;
@@ -406,7 +408,7 @@ h1{
         height: 26px;
         width: 32px;
         position: absolute;
-        top: 17px;
+        top: 40px;
         right: 20px;
         z-index: 2;
         display: flex;
@@ -462,7 +464,6 @@ h1{
         font-size: 1rem;
         font-weight: 400;
         text-align: left;
-        
       }
       .logo {
         position: absolute;
@@ -470,6 +471,7 @@ h1{
         left: 15px;
         font-size: 1.2rem;
         color: #0e2431;
+        display: none;
       }
       
       .nav-container input[type="checkbox"]:checked ~ .menu-items { /* hvad der sker når den usynlige checkbox er checket af*/
@@ -538,8 +540,8 @@ h1{
         margin: auto;
     }
     .pladsholder{
-        width:100%;
-        height: 500px;
+        width:80%;
+        height: auto
     }
 
 
@@ -575,9 +577,15 @@ h1{
     }
     .mkvadrat{
         display: block;
+        width: 80%;
     }
     .column{
         flex-direction: column;
+    }
+    .plads3{
+        width:80%;
+        margin: auto;
+        margin-bottom: 3%;
     }
     .kvadratsæt{
         width: 100%;
