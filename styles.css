@@ -17,6 +17,7 @@ p{
     font-size: 20pt;
     margin-left: 15%;
     margin-right: 15%;
+    font-family: 'Lato', sans-serif;
 }
 body a{
     text-decoration: none;
@@ -246,6 +247,7 @@ h1{
     width: 45%;
     height: 250px;
 }
+
 /*til tekst/billede/billede på sita fx----------------------*/
 .flexb2t1{
     width: 70%;
