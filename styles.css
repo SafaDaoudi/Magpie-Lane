@@ -436,6 +436,77 @@ h1{
 }
 
 
+/*HER STARTER FOOTER'EN*/
+footer{
+    background-color: rgb(255, 255, 255);
+    border-top: solid black 1px;
+    margin-top: 40%;
+    display: flex;
+    height: 10%;
+}
+footer h4{
+    font-family: 'Playfair Display', serif; 
+    font-size: 18pt;
+    font-weight: normal;
+    margin-left: 5%;
+  
+}
+footer h5{
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: rgb(84, 84, 90);
+}
+
+
+
+.åbningstider{
+    margin-top: 5%;
+    margin-left: 7%;
+    padding-right: 17%;
+    
+    line-height:250%;
+    text-align: left;
+}
+
+.åbningstider h4{
+    padding-bottom: 70%;
+}
+
+
+
+.some{
+    margin-top: 5%;
+    align-items: center;
+}
+
+
+.some a{
+   
+    text-decoration: none;
+}
+.some img{ /*ikonernes størrelse*/
+    margin-top: 30%;
+    margin-left: 2%;
+    width:5%;
+    height: auto;
+}
+
+.some img:hover{ /*Hvor stort ikonerne skal "springe" ud*/
+    transition: transform .1s;
+    width: 10%;
+    height: auto;
+}
+
+
+
+.hyperlink{
+   
+    margin-top: 5%;
+}
+.hyperlink h4{
+    padding-bottom: 25%;
+}
 
 
 @media screen and (max-width: 800px){
@@ -668,10 +739,13 @@ h1{
    .marginbottom{
     margin-bottom: 120px;
    }
-   
+   .marginbottom2{
+    margin-bottom: 50px;
+   }
     .pladsholder{
         width:80%;
-        height: auto
+        height: auto;
+        margin-top: 20px
     }
 
     .pladsholdert{
@@ -738,7 +812,10 @@ h1{
 
     footer h4{
         flex-direction: column;
+        }
 
+    .streg{
+        margin-top: 200px;
     }
 }
 
