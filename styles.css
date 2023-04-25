@@ -279,7 +279,7 @@ h1{
 .flexb1t1{
     display: flex;
     width:70%;
-    height: 500px;/*skal hedde height: auto*/
+    height: auto;
     align-items: center;
     margin: auto;
     justify-content: space-between;
@@ -304,6 +304,7 @@ h1{
     width: 45%;
     height: auto;
 }
+
 /*til tekst/billede/billede på sita fx----------------------*/
 .flexb2t1{
     width: 70%;
@@ -390,6 +391,10 @@ h1{
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.femogfyrre{
+    width: 45%;
+}
+
 .plads3{
     width: 100%;
     height: auto;
@@ -628,8 +633,11 @@ h1{
         width: 100%;
         margin: auto;
         margin-bottom: 400px;
+        gap: 20px;
     }
-
+   .marginbottom{
+    margin-bottom: 120px;
+   }
    
     .pladsholder{
         width:80%;
@@ -694,6 +702,9 @@ h1{
     }
     .kvadratsæt{
         width: 100%;
+    }
+    .margintop{
+        margin-top: 0;
     }
 }
 
