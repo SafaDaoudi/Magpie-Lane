@@ -64,10 +64,10 @@ p{
 body a{
     text-decoration: none;
     color: black;
-
 }
 body a:hover{
     text-decoration: underline;
+    
 }
 /*---------------------------------------HEADER--------------------------------*/
 #burgermenu{
@@ -81,7 +81,6 @@ header{
     width: 100%;
     height: 130px;
     z-index: 999;
-    font-family: 'Lato', sans-serif;
     transition: 2s;
     display: block;
 }
@@ -107,6 +106,7 @@ header nav a{
     padding-right: 45px;
     text-decoration:none;
     color: black;
+    font-family: 'Lato', sans-serif;
 }
 header nav a:hover{
     text-decoration: underline;
