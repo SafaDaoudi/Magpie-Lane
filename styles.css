@@ -714,7 +714,6 @@ h1{
     }
 
 
-
     .lrektangel{
         display: none;
     }
@@ -735,6 +734,11 @@ h1{
     }
     .margintop{
         margin-top: 0;
+    }
+
+    footer h4{
+        flex-direction: column;
+
     }
 }
 
@@ -778,14 +782,10 @@ footer h5{
 
 
 
-
-
 .some{
     margin-top: 5%;
     align-items: center;
 }
-
-
 .some a{
    
     text-decoration: none;
@@ -795,13 +795,11 @@ footer h5{
     width:5%;
     height: auto;
 }
-
 .some img:hover{ /*Hvor stort ikonerne skal "springe" ud*/
     transition: transform .2s;
     width: 5.5%;
     height: auto;
 }
-
 
 
 .hyperlink{
