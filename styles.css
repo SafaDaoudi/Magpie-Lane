@@ -618,7 +618,7 @@ footer h5{
       .navbar .menu-items { /*styling til hvordan linksene er placeret og transformeres*/
         padding-top: 120px;
         background-color: white;
-        height: 100vh;
+        height: 110vh;
         width: 100%;
         transform: translate(-150%);
         display: flex;
@@ -626,6 +626,7 @@ footer h5{
         padding-left: 50px;
         transition: transform 0.5s ease-in-out;
         text-align: center;
+        line-height: 10PX;
       }
     
       
