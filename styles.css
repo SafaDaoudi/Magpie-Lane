@@ -86,7 +86,6 @@ header{
     width: 100%;
     height: 130px;
     z-index: 999;
-    font-family: 'Lato', sans-serif;
     transition: 2s;
     display: block;
 }
@@ -95,6 +94,8 @@ header:hover{
     background-color: white;
     transition: 2s;
 }
+
+
 
 #logo{
     width: 20%;
@@ -111,7 +112,8 @@ header nav a{
     padding-left: 45px;
     padding-right: 45px;
     text-decoration:none;
-    color: black;
+    color: rgb(0, 0, 0);
+    font-family: 'Lato',sans-serif;
 }
 header nav a:hover{
     text-decoration: underline;
