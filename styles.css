@@ -55,9 +55,15 @@ p{
     font-family: 'Lato', sans-serif;
    
 }
+<<<<<<< HEAD
+.pris{
+    font-size: 10pt;
+    margin-left: 15%;
+=======
 .pmarginlr{
     margin-left: 15%;
     margin-right: 15%;
+>>>>>>> 0f6817c68bd5c9dfe9ead6dc4dd57f4b47647d97
 }
 
 /*---------------------------------BODY--------------------------------*/
