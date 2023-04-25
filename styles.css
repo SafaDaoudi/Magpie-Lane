@@ -18,6 +18,11 @@ h2 {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
+h3{
+    font-size: 30pt;
+    font-weight: 300;
+}
  
 @keyframes fadeInAnimation {
     0% {
@@ -356,6 +361,17 @@ h1{
     margin: auto;
     margin-top: 100px;
     margin-bottom: 30px;
+}
+
+.laes{
+    background-color: #ff5951;
+    padding: 5%;
+    margin-top: 500px;
+}
+
+.laes a{
+    font-family: 'Lato', sans-serif;
+    color: #5c869e;
 }
 
 /*rekatngel billde - tokvadrat billede, OBS tjek om det virker med billedernes størrelse!!*/
@@ -721,8 +737,8 @@ footer{
 }
 footer h4{
     font-family: 'Playfair Display', serif; 
-    font-size: 12pt;
-    font-weight: bold;
+    font-size: 18pt;
+    font-weight: normal;
     margin-left: 5%;
   
 }
@@ -738,7 +754,7 @@ footer h5{
 .åbningstider{
     margin-top: 5%;
     margin-left: 7%;
-    padding-right: 10%;
+    padding-right: 17%;
     
     line-height:250%;
     text-align: left;
@@ -752,35 +768,33 @@ footer h5{
 
 .some{
     margin-top: 5%;
-    margin-left: 15%;
+    align-items: center;
 }
 
 
 .some a{
-    padding-left: 10%; /*Giver ikonerne plads mellem hinanden*/
+   
     text-decoration: none;
 }
 .some img{ /*ikonernes størrelse*/
     margin-top: 30%;
-    width:12%;
-    height: 10%;
+    margin-left: 2%;
+    width:5%;
+    height: auto;
 }
+
 .some img:hover{ /*Hvor stort ikonerne skal "springe" ud*/
     transition: transform .1s;
-    width: 15%;
-    height: 12.5%;
+    width: 10%;
+    height: auto;
 }
+
 
 
 .hyperlink{
-    margin-left: 20%;
-    margin-right: 5%;
+   
     margin-top: 5%;
 }
 .hyperlink h4{
     padding-bottom: 25%;
-}
-
-.hyperlink iframe{
-    padding-right: 10%;
 }
