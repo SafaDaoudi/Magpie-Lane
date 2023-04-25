@@ -55,15 +55,9 @@ p{
     font-family: 'Lato', sans-serif;
    
 }
-<<<<<<< HEAD
-.pris{
-    font-size: 10pt;
-    margin-left: 15%;
-=======
 .pmarginlr{
     margin-left: 15%;
     margin-right: 15%;
->>>>>>> 0f6817c68bd5c9dfe9ead6dc4dd57f4b47647d97
 }
 
 /*---------------------------------BODY--------------------------------*/
@@ -87,6 +81,7 @@ header{
     width: 100%;
     height: 130px;
     z-index: 999;
+    font-family: 'Lato', sans-serif;
     transition: 2s;
     display: block;
 }
@@ -95,8 +90,6 @@ header:hover{
     background-color: white;
     transition: 2s;
 }
-
-
 
 #logo{
     width: 20%;
@@ -113,8 +106,7 @@ header nav a{
     padding-left: 45px;
     padding-right: 45px;
     text-decoration:none;
-    color: rgb(0, 0, 0);
-    font-family: 'Lato',sans-serif;
+    color: black;
 }
 header nav a:hover{
     text-decoration: underline;
