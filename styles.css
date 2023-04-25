@@ -788,7 +788,6 @@ footer h5{
     }
 
 
-
     .lrektangel{
         display: none;
     }
@@ -810,6 +809,11 @@ footer h5{
     .margintop{
         margin-top: 0;
     }
+
+    footer h4{
+        flex-direction: column;
+        }
+
     .streg{
         margin-top: 200px;
     }
