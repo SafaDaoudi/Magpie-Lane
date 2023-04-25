@@ -55,6 +55,11 @@ p{
     font-family: 'Lato', sans-serif;
    
 }
+.pris{
+    font-size: 10pt;
+    margin-left: 15%;
+}
+
 .pmarginlr{
     margin-left: 15%;
     margin-right: 15%;
