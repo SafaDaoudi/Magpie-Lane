@@ -301,11 +301,6 @@ h1{
     height: auto;
     /*nogen bud på, hvordan vi får teksten op i toppen og ikke centreret?*/
 }
-.pladsholdert{
-    width: 45%;
-    height: 250px;
-}
-
 
 .laes{
     background-color: hwb(3 32% 0%);
@@ -503,7 +498,14 @@ footer h5{
 .hyperlink h4{
     padding-bottom: 20%;
 }
-
+.zoom{
+    margin: 10px;
+    transition: transform .3s; 
+    margin: 0 auto;
+  }
+.zoom:hover {
+    transform: scale(1.05); 
+  }
 
 @media screen and (max-width: 800px){
     p{
@@ -643,13 +645,13 @@ footer h5{
         font-weight: 400;
         text-align: left;
       }
-      .logo {
+      #burgerlogo {
         position: absolute;
         top: 5px;
         left: 15px;
-        font-size: 1.2rem;
-        color: #0e2431;
-        display: none;
+        width: 10%;
+        height: auto; 
+        margin-top: 20px;
       }
       
       .nav-container input[type="checkbox"]:checked ~ .menu-items { /* hvad der sker når den usynlige checkbox er checket af*/
